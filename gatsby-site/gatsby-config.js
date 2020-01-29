@@ -1,11 +1,23 @@
+const wordpressUrl = `http://entra.local/graphql`
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Justin McIntosh`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `Justin McIntosh`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `WPGraphql`,
+        fieldName: `wpgraphql`,
+        url: wordpressUrl,
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
