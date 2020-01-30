@@ -1,18 +1,19 @@
-import React from "react"
+import React from 'react'
+import { Root, Container, Column } from './styles'
 
 const Intro = () => (
-  <section className="hero">
-    <div className="hero-body">
-      <div className="container has-text-centered">
-        <h1 className="title">Full Stack Developer & Consultant</h1>
+  <Root>
+    <Container>
+      <Column>
+        <h1>Full Stack Developer & Consultant</h1>
 
-        <h2 className="subtitle">
+        <h2>
           I build beautiful functional websites and products for businesses
           because I love them.
         </h2>
-      </div>
-    </div>
-  </section>
+      </Column>
+    </Container>
+  </Root>
 )
 
 export default Intro
