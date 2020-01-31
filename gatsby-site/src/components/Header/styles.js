@@ -24,6 +24,10 @@ export const NavLinks = styled.div`
 `
 export const BlogLink = styled.div`
   padding: 20px 0px 0px 25px;
+  @media (max-width: 500px) {
+    padding: 10px 0px 0px 25px;
+  }
+
   h3 {
     font-size: 18px;
     font-weight: 400;
@@ -53,7 +57,7 @@ export const Button = styled.div`
     @media (max-width: 500px) {
       font-size: 10px;
       width: 90px;
-      height: 60px;
+      height: 40px;
     }
   }
 
