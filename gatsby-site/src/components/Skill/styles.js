@@ -16,6 +16,7 @@ export const Column = styled.div`
   align-self: center;
   width: 100%;
 
+
   li {
     list-style-type: none;
     font-size: 17px;
@@ -47,7 +48,7 @@ export const BoxContainer = styled.div`
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
   color: #141c3a;
   display: flex;
-  padding: 1.25rem;
+  padding: 0.5rem;
 `
 
 export const BoxLeft = styled.div`

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Computer from '../../../assets/computer.svg'
+import WebCoding from '../../../assets/web-coding.svg'
 import Concept from '../../../assets/concept.svg'
 
 import { Root, Column, BoxLeft, BoxRight, BoxContainer } from './styles'
@@ -11,7 +11,7 @@ export default () => (
     <Column>
       <BoxContainer>
         <BoxLeft>
-          <Computer
+          <WebCoding
             style={{ height: '80px', width: 'auto', marginBottom: '20px' }}
           />
           <h3>Full-Stack Developer</h3>
