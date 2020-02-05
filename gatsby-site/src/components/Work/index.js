@@ -30,12 +30,12 @@ const Work = () => {
       body: `I'm good at thinking abstractly and putting together systems with many moving parts.`,
     },
     {
-      image: <Problem />,
+      image: <Organize />,
       title: 'Communicating',
       body: `I can explain things clearly, in plain English, with no tech jargon.`,
     },
     {
-      image: <Organize />,
+      image: <Problem />,
       title: 'Organizing',
       body: `I can self-manage, work to deadlines, organize projects, and present well-structured and complete deliverables.`,
     },
@@ -53,25 +53,6 @@ const Work = () => {
           </h3>
         </Column>
       </Container>
-      {
-        // <SkillsContainer>
-        //   <ContentLeft>
-        //     {' '}
-        //     <Idea
-        //       style={{ height: '100px', width: 'auto', marginBottom: '20px' }}
-        //     />
-        //   </ContentLeft>
-        //   <ContentRight>
-        //     <h4>An Entrepreneurial Mind</h4>
-        //     <p>
-        //       My entire career has been focused on starting and operating
-        //       businesses. I leverage that experience in all of my projects. I
-        //       understand your challenges and work my tail off to help you solve
-        //       them
-        //     </p>
-        //   </ContentRight>
-        // </SkillsContainer>
-      }
       <SkillsContainer2 style={{ width: '80%', paddingTop: '30px' }}>
         {skillsData.map(({ image, title, body }) => (
           <SkillsColumn>
