@@ -1,11 +1,11 @@
 import React from 'react'
 
-import MattiD from '../Images/MattiD'
-import DocuSite from '../Images/DocuSite'
-import Hike from '../Images/Hike'
-import Journal from '../Images/Journal'
-import GitHub from '../../../assets/github.svg'
+import Hover from './Hover'
 
+import mattid from '../../images/mattid.jpg'
+import hike from '../../images/hike.jpg'
+import docusite from '../../images/docusite.jpg'
+import journal from '../../images/journal.jpg'
 import {
   Root,
   Container,
@@ -18,14 +18,14 @@ import {
 const Projects = () => {
   const myWorksection1 = [
     {
-      image: <MattiD />,
+      image: mattid,
       title: 'Matti D',
       body: 'Promotional website for a retail boutique in Del Mar, CA.',
       url: 'https://mattidstyle.com',
       stack: 'Wordpress',
     },
     {
-      image: <DocuSite />,
+      image: docusite,
       title: 'DocuSite',
       body: 'Promotional website for a construction application.',
       url: 'https://docusites.com',
@@ -35,7 +35,7 @@ const Projects = () => {
 
   const myWorksection2 = [
     {
-      image: <Journal />,
+      image: journal,
       title: 'Daily Journal',
       body: `Side project that lets users record a simple journal.`,
       url: 'https://my-journal-app123.herokuapp.com',
@@ -43,11 +43,11 @@ const Projects = () => {
       git: 'https://github.com/jmutt78/15-Minute-Journal',
     },
     {
-      image: <Hike />,
+      image: hike,
       title: 'Trail Finder API',
       body: `Side project that lets users find trails near them.`,
       url: 'https://jmutt78.github.io/Hiking-API-Hack/',
-      stack: 'HTML CSS JavaScript jQuery',
+      stack: 'HTML, CSS, JavaScript, jQuery',
       git: 'https://github.com/jmutt78/15-Minute-Journal',
     },
   ]
@@ -63,33 +63,29 @@ const Projects = () => {
       <SkillsContainer style={{ width: '80%', paddingTop: '30px' }}>
         {myWorksection1.map(({ image, title, body, stack, url, git }) => (
           <SkillsColumn>
-            {image}
-            <h4>{title}</h4>
-            <p>{body}</p>
-            <p>Stack: {stack}</p>
-            <Button>
-              <a href={url} target="_blank">
-                <button className="btn">VISIT WEBSITE ></button>
-              </a>
-            </Button>
+            <Hover
+              image={image}
+              title={title}
+              body={body}
+              stack={stack}
+              url={url}
+              git={git}
+            />
           </SkillsColumn>
         ))}
       </SkillsContainer>
       <SkillsContainer style={{ width: '80%', paddingTop: '30px' }}>
+        {' '}
         {myWorksection2.map(({ image, title, body, stack, url, git }) => (
           <SkillsColumn>
-            {image}
-            <h4>{title}</h4>
-            <p>{body}</p>
-            <p>Stack: {stack}</p>
-            <Button>
-              <a href={url} target="_blank">
-                <button className="btn">VISIT WEBSITE ></button>
-              </a>
-              <a href={git} target="_blank">
-                <GitHub />
-              </a>
-            </Button>
+            <Hover
+              image={image}
+              title={title}
+              body={body}
+              stack={stack}
+              url={url}
+              git={git}
+            />
           </SkillsColumn>
         ))}
       </SkillsContainer>

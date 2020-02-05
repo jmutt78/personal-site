@@ -43,8 +43,8 @@ export default () => (
             <li>3 years developer</li>
             <li>13 years in entrepreneurship</li>
             <li>+20 projects</li>
-            <li>3 startup</li>
             <li>2 startup</li>
+            <li>1 exit</li>
           </ul>
         </BoxRight>
       </BoxContainer>

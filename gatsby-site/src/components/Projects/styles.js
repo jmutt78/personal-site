@@ -5,6 +5,7 @@ export const Root = styled.div`
   flex-grow: 1;
   flex-shrink: 0;
   padding: 0rem 1.5rem;
+  padding-bottom: 150px;
 `
 
 export const Container = styled.div`
@@ -45,12 +46,12 @@ export const SkillsColumn = styled.div`
   text-align: center;
   justify-content: center;
   margin: 0px 20px 10px 20px;
-  width: 350px;
+  width: 500px;
   height auto;
   h4 {
 
     line-height: 1.5;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     color: white;
     margin-bottom: .75rem;
     margin-top: .75rem;
@@ -58,11 +59,10 @@ export const SkillsColumn = styled.div`
 
   p {
     color: white;
-
     padding: 0px 30px 0px 30px;
     max-width: 500px;
     margin-bottom: .5rem;
-    font-size: 1rem;
+    font-size: .9rem;
   }
   a {
     color: white;
@@ -71,7 +71,6 @@ export const SkillsColumn = styled.div`
     height: 30px;
     width: auto;
     position:absolute;
-
     filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(167deg) brightness(103%) contrast(107%);
   }
 `
@@ -80,8 +79,8 @@ export const Button = styled.div`
   svg {
     height: 30px;
     width: auto;
-    position: absolute;
-    top: 10%;
+
+    bottom: 40%;
     padding-left: 10px;
     cursor: pointer;
     filter: invert(44%) sepia(48%) saturate(1564%) hue-rotate(358deg)

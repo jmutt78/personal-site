@@ -62,7 +62,7 @@ export const Button = styled.div`
   }
 
   .btn:hover {
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     background: #1c0947;
     color: white;
   }
