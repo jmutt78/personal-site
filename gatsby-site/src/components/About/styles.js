@@ -32,7 +32,12 @@ export const Column = styled.div`
     font-family: 'europa', sans-serif;
     font-weight: 300;
     line-height: 1.5;
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
     margin-bottom: 1.5rem;
   }
+
+  @media (max-width: 500px) {
+    h4 {
+      padding: 0px 15px 0px 15px;
+    }
 `

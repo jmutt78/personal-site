@@ -41,38 +41,9 @@ export const Column = styled.div`
   }
 `
 
-//Icon next to the text
-
-export const SkillsContainer = styled.div`
-  justify-content: center;
-  color: #141c3a;
-  display: flex;
-  padding: 0.5rem;
-  width: 80%;
-`
-export const ContentLeft = styled.div`
-  text-align: right;
-  padding: 70px 45px;
-  display: block;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  flex-shrink: 1;
-`
-
-export const ContentRight = styled.div`
-  padding: 70px 45px;
-  display: block;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  flex-grow: 2;
-  flex-shrink: 1;
-`
-
 //Icon on  top
 
 export const SkillsContainer2 = styled.div`
-  -webkit-box-flex: 1;
   display: flex;
   flex-grow: 1;
   margin: 0 auto;
@@ -92,6 +63,10 @@ export const SkillsContainer2 = styled.div`
     max-width: 500px;
     font-size: 1.1rem;
   }
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 `
 
 export const SkillsColumn = styled.div`
@@ -99,4 +74,8 @@ export const SkillsColumn = styled.div`
   text-align: center;
   justify-content: center;
   padding-right: 50px;
+
+  @media (max-width: 800px) {
+    padding: 0px 0px 15px 0px;
+  }
 `

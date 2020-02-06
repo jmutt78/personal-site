@@ -44,7 +44,7 @@ const Footer = () => {
         <ImageContainer>
           <Logo />
         </ImageContainer>
-        <h2>Making it happen one day at a time.</h2>
+        <h2>Never Giving Up.</h2>
         <SocialContainer>
           {social.map(({ image, url, alt }) => (
             <div>

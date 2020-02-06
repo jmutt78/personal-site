@@ -19,7 +19,7 @@ export const Column = styled.div`
 
   li {
     list-style-type: none;
-    font-size: 17px;
+    font-size: 1.2rem;
     margin: 0;
     padding: 5px 0px 0px 0px;
 }
@@ -31,15 +31,19 @@ export const Column = styled.div`
   }
 
   p {
-    font-size: 17px;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5;
   }
   .p-title {
-    font-size: 18px;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 8px;
     color: #f97304 !important;
+  }
+
+  @media (max-width: 500px) {
+      padding: 0px 15px 0px 15px;
   }
 `
 export const BoxContainer = styled.div`
@@ -49,6 +53,11 @@ export const BoxContainer = styled.div`
   color: #141c3a;
   display: flex;
   padding: 0.5rem;
+
+  @media (max-width: 500px) {
+    display: grid;
+    padding: 0;
+  }
 `
 
 export const BoxLeft = styled.div`
@@ -59,6 +68,10 @@ export const BoxLeft = styled.div`
   flex-grow: 1;
   flex-shrink: 1;
   border-right: 1px solid #e6ecf8;
+  @media (max-width: 500px) {
+    border-bottom: 1px solid #e6ecf8;
+    border-right: 0px;
+  }
 `
 
 export const BoxRight = styled.div`

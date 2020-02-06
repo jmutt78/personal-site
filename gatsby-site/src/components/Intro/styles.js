@@ -34,12 +34,42 @@ export const Column = styled.div`
 
     margin-bottom: 1.5rem;
   }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      line-height: 1.125;
+      font-size: 2rem !important;
+    }
+
+    h2 {
+      font-family: 'europa', sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 1rem !important;
+
+      margin-bottom: 1.5rem;
+    }
+  }
 `
 
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 25px;
+  img {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+  }
+
+  @media (max-width: 500px) {
+    img {
+      border-radius: 50%;
+      width: 50%;
+      height: auto;
+    }
 `
 export const IconContainer = styled.div`
   display: flex;

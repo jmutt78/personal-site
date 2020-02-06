@@ -9,9 +9,6 @@ import {
   Root,
   Container,
   Column,
-  SkillsContainer,
-  ContentLeft,
-  ContentRight,
   SkillsContainer2,
   SkillsColumn,
 } from './styles'

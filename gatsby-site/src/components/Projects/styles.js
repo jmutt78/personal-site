@@ -6,24 +6,8 @@ export const Root = styled.div`
   flex-shrink: 0;
   padding: 0rem 1.5rem;
   padding-bottom: 150px;
-`
-
-export const Container = styled.div`
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  margin: 0 auto;
-  position: relative;
-  width: auto;
-`
-
-export const Column = styled.div`
-  display: block;
-  text-align: center;
-  h3 {
-    font-weight: 700;
-    line-height: 1.5;
-    font-size: 1.8rem !important;
-    margin-bottom: 0rem;
+  @media (max-width: 800px) {
+    width: 100%;
   }
 `
 
@@ -31,38 +15,40 @@ export const Column = styled.div`
 
 export const SkillsContainer = styled.div`
   display: flex;
-  flex-grow: 1;
   margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  width: 80%;
+
+  @media (max-width: 800px) {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
 `
 
 export const SkillsColumn = styled.div`
-
-  background-color: #1c0947;
-  border-radius: 12px;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-  color: #141c3a;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-basis: calc(50% - 40px);
   justify-content: center;
-  margin: 0px 20px 10px 20px;
-  width: 500px;
-  height auto;
-  h4 {
+  flex-direction: column;
+  margin: 40px 30px 0px 0px;
 
+  h4 {
     line-height: 1.5;
     font-size: 1rem !important;
     color: white;
-    margin-bottom: .75rem;
-    margin-top: .75rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
   }
 
   p {
     color: white;
     padding: 0px 30px 0px 30px;
     max-width: 500px;
-    margin-bottom: .5rem;
-    font-size: .9rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
   }
   a {
     color: white;
@@ -70,8 +56,9 @@ export const SkillsColumn = styled.div`
   svg {
     height: 30px;
     width: auto;
-    position:absolute;
-    filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(167deg) brightness(103%) contrast(107%);
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(167deg)
+      brightness(103%) contrast(107%);
   }
 `
 export const Button = styled.div`
@@ -100,7 +87,7 @@ export const Button = styled.div`
     font-weight: 900;
     color: #f97304;
     text-align: center;
-    margin: 0px 0px 20px 5px;
+    margin: 0px 0px 0px 5px;
     padding: 5px;
     @media (max-width: 500px) {
       font-size: 10px;

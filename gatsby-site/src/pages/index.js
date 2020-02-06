@@ -8,7 +8,6 @@ import Work from '../components/Work'
 import Projects from '../components/Projects'
 import Transition from '../components/Transition'
 import Startup from '../components/Startup'
-import Footer from '../components/Footer'
 
 import SEO from '../components/Seo'
 
@@ -22,7 +21,6 @@ const IndexPage = () => (
     <Projects />
     <Transition />
     <Startup />
-    <Footer />
   </Layout>
 )
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from '@emotion/styled/macro'
 import { jsx, css } from '@emotion/core'
 import { Button } from './styles'
@@ -67,12 +67,26 @@ const CTA = styled.a({
 })
 
 const Hovers = ({ image, title, body, stack, url, git }) => {
+  const mediaMatch = window.matchMedia('(max-width: 500px)')
+  const [matches, setMatches] = useState(mediaMatch.matches)
+
+  useEffect(() => {
+    const handler = e => setMatches(e.matches)
+    mediaMatch.addListener(handler)
+    return () => mediaMatch.removeListener(handler)
+  })
+
+  const style = {
+    width: '300px',
+  }
+
   return (
-    <div className="App">
+    <div className="App" style={{ margin: `0 auto` }}>
       <Background
         css={css`
           background-image: url(${image});
         `}
+        style={matches ? style : null}
       >
         <DisplayOver>
           <Hover>

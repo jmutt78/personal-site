@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Root = styled.div`
-  padding: 1rem 1.5rem 4rem;
+  padding: 1rem 1.5rem 2rem;
 `
 
 export const Container = styled.div`
@@ -32,13 +32,19 @@ export const ImageContainer = styled.div`
 export const SocialContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+
   svg {
     width: 42px;
     height: auto;
     margin: 0 50px 50px 0;
     cursor: pointer;
-    filter: invert(44%) sepia(48%) saturate(1564%) hue-rotate(358deg)
-      brightness(102%) contrast(101%);
+
+    filter: invert(3%) sepia(80%) saturate(6562%) hue-rotate(263deg)
+      brightness(96%) contrast(96%);
+    @media (max-width: 500px) {
+      width: 30px;
+      margin: 0px 15px 30px 15px;
+      height: auto;
+    }
   }
 `

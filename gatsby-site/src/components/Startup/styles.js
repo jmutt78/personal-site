@@ -12,8 +12,9 @@ export const Root = styled.div`
 
 export const StartupContainer = styled.div`
   display: flex;
-  flex-grow: 1;
   margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
 `
 
