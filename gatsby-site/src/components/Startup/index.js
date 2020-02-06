@@ -3,7 +3,14 @@ import React from 'react'
 import DocuSite from '../../../assets/docusite.svg'
 import Entra from '../../../assets/entra.svg'
 
-import { Root, StartupContainer, StartupColumn } from './styles'
+import {
+  Root,
+  StartupContainer,
+  StartupColumn,
+  Container,
+  Column,
+  Button,
+} from './styles'
 
 const Startup = () => {
   const startups = [
@@ -37,6 +44,16 @@ const Startup = () => {
           </StartupColumn>
         ))}
       </StartupContainer>
+      <Container>
+        <Column>
+          <h2>Interested in working together? </h2>
+          <Button>
+            <a>
+              <button className="btn">LETS CHAT</button>
+            </a>
+          </Button>
+        </Column>
+      </Container>
     </Root>
   )
 }

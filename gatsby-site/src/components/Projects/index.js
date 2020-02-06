@@ -54,12 +54,6 @@ const Projects = () => {
 
   return (
     <Root>
-      <Container>
-        <Column>
-          <h3>Recent Projects</h3>
-        </Column>
-      </Container>
-
       <SkillsContainer style={{ width: '80%', paddingTop: '30px' }}>
         {myWorksection1.map(({ image, title, body, stack, url, git }) => (
           <SkillsColumn>
@@ -94,3 +88,9 @@ const Projects = () => {
 }
 
 export default Projects
+
+// <Container>
+//   <Column>
+//     <h3>Recent Projects</h3>
+//   </Column>
+// </Container>
