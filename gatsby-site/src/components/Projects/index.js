@@ -6,7 +6,7 @@ import mattid from '../../images/mattid.jpg'
 import hike from '../../images/hike.jpg'
 import docusite from '../../images/docusite.jpg'
 import journal from '../../images/journal.jpg'
-import { Root, SkillsContainer, SkillsColumn, Button } from './styles'
+import { Root, SkillsContainer, SkillsColumn } from './styles'
 
 const Projects = () => {
   const myWorksection1 = [

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import styled from 'styled-components'
 
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
@@ -35,7 +34,6 @@ const Profile = () => {
     height: '300px',
   }
 
-  console.log(style)
   return (
     <Img
       style={matches ? responsive : style}

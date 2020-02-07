@@ -26,10 +26,10 @@ export const Root = styled.div`
 const Post = props => {
   const {
     data: {
-      wpgraphql: { post, loading },
+      wpgraphql: { post },
     },
   } = props
-  console.log(props)
+
   const { title, content, date } = post
 
   return (

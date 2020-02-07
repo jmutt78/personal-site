@@ -6,7 +6,7 @@ import HeaderModal from './HeaderModal'
 import Logo from '../Images/Logo.js'
 import Calendly from '../Calendly'
 
-import { Button, Root, NavFlex, NavLinks, BlogLink } from './styles'
+import { Root, NavFlex, NavLinks, BlogLink } from './styles'
 
 const Header = ({ siteTitle }) => (
   <header>

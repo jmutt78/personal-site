@@ -4,7 +4,6 @@ import WebCoding from '../../../assets/web-coding.svg'
 import Concept from '../../../assets/concept.svg'
 
 import { Root, Column, BoxLeft, BoxRight, BoxContainer } from './styles'
-import { Container } from '../Intro/styles.js'
 
 export default () => (
   <Root>

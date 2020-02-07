@@ -12,7 +12,6 @@ import {
   StartupColumn,
   Container,
   Column,
-  Button,
 } from './styles'
 
 const Startup = () => {
@@ -41,7 +40,7 @@ const Startup = () => {
 
             <p>{body}</p>
 
-            <a href={url} target="_blank">
+            <a href={url} target="_blank" rel="noopener noreferrer">
               {simple}
             </a>
           </StartupColumn>

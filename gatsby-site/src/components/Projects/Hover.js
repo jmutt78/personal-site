@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from '@emotion/styled/macro'
-import { jsx, css } from '@emotion/core'
+import { css } from '@emotion/core'
 import { Button } from './styles'
 import GitHub from '../../../assets/github.svg'
 
@@ -95,11 +95,11 @@ const Hovers = ({ image, title, body, stack, url, git }) => {
             <Paragraph>Stack: {stack}</Paragraph>
             <CTA>
               <div>
-                <Button href={url} target="_blank">
+                <Button href={url} target="_blank" rel="noopener noreferrer">
                   VISIT WEBSITE+
                 </Button>
                 {git && (
-                  <a href={git} target="_blank">
+                  <a href={git} target="_blank" rel="noopener noreferrer">
                     <GitHub />
                   </a>
                 )}

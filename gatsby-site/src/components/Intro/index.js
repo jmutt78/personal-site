@@ -2,13 +2,7 @@ import React from 'react'
 
 import Profile from '../Images/Profile.js'
 
-import {
-  Root,
-  Container,
-  Column,
-  ImageContainer,
-  IconContainer,
-} from './styles'
+import { Root, Container, Column, ImageContainer } from './styles'
 
 export default () => (
   <Root>

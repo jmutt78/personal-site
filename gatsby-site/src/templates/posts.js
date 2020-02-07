@@ -42,7 +42,7 @@ const Posts = props => {
     pageContext: { pageNumber, hasNextPage },
   } = props
 
-  const currentPage = pageNumber ? `- Page ${pageNumber}` : ``
+  // const currentPage = pageNumber ? `- Page ${pageNumber}` : ``
 
   return (
     <Layout>
