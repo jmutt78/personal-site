@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Root = styled.div`
   -webkit-box-flex: 1;
@@ -9,7 +9,11 @@ export const Root = styled.div`
   @media (max-width: 800px) {
     width: 100%;
   }
-`
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+`;
 
 //Icon on  top
 
@@ -26,14 +30,14 @@ export const SkillsContainer = styled.div`
     display: block;
     margin: 0 auto;
   }
-`
+`;
 
 export const SkillsColumn = styled.div`
   display: flex;
-  flex-basis: calc(50% - 40px);
+
   justify-content: center;
   flex-direction: column;
-  margin: 40px 30px 0px 0px;
+  margin: 30px 15px 0px 0px;
 
   h4 {
     line-height: 1.5;
@@ -61,7 +65,7 @@ export const SkillsColumn = styled.div`
     filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(167deg)
       brightness(103%) contrast(107%);
   }
-`
+`;
 export const Button = styled.a`
   position: relative;
   width: 150px;
@@ -94,4 +98,4 @@ export const Button = styled.a`
   :hover svg {
     stroke-dashoffset: -480;
   }
-`
+`;

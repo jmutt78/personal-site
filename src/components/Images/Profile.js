@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const Profile = () => {
   const data = useStaticQuery(graphql`
@@ -14,16 +14,16 @@ const Profile = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Img
-      style={{ width: '300px', height: '300px' }}
+      style={{ width: "250px", height: "250px" }}
       objectFit="cover"
       alt="Photo of Justin McIntosh a full stack developer"
       fluid={data.placeholderImage.childImageSharp.fluid}
     />
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
