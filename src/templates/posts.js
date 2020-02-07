@@ -1,11 +1,11 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
-import { format, parseISO } from 'date-fns'
+import React from "react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import { format, parseISO } from "date-fns";
 
-import Layout from '../components/Layout'
-import Card from '../components/Card'
-import Pagination from '../components/Pagination'
+import Layout from "../components/layout.js";
+import Card from "../components/Card";
+import Pagination from "../components/Pagination";
 
 export const Root = styled.div`
   padding: 1rem 4rem 2rem;
@@ -30,17 +30,17 @@ export const Root = styled.div`
       width: 800px;
     }
   }
-`
+`;
 
-export const Container = styled.div``
+export const Container = styled.div``;
 
 const Posts = props => {
   const {
     data: {
-      wpgraphql: { posts },
+      wpgraphql: { posts }
     },
-    pageContext: { pageNumber, hasNextPage },
-  } = props
+    pageContext: { pageNumber, hasNextPage }
+  } = props;
 
   // const currentPage = pageNumber ? `- Page ${pageNumber}` : ``
 
@@ -53,7 +53,7 @@ const Posts = props => {
             <Card
               image={post.featuredImage.sourceUrl}
               title={post.title}
-              date={format(parseISO(post.date), 'MMMM dd, yyyy')}
+              date={format(parseISO(post.date), "MMMM dd, yyyy")}
               slug={post.slug}
               uri={post.uri}
               alt={post.featuredImage.altText}
@@ -64,10 +64,10 @@ const Posts = props => {
         <Pagination pageNumber={pageNumber} hasNextPage={hasNextPage} />
       </Root>
     </Layout>
-  )
-}
+  );
+};
 
-export default Posts
+export default Posts;
 
 export const postQuery = graphql`
   query GET_POSTS($ids: [ID]) {
@@ -88,4 +88,4 @@ export const postQuery = graphql`
       }
     }
   }
-`
+`;

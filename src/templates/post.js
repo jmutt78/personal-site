@@ -1,8 +1,8 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
-import { format, parseISO } from 'date-fns'
-import Layout from '../components/Layout'
+import React from "react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
+import { format, parseISO } from "date-fns";
+import Layout from "../components/layout.js";
 
 export const Root = styled.div`
   padding: 1rem 4rem 2rem;
@@ -21,29 +21,29 @@ export const Root = styled.div`
   @media (max-width: 500px) {
     padding: 1rem 2rem 2rem;
   }
-`
+`;
 
 const Post = props => {
   const {
     data: {
-      wpgraphql: { post },
-    },
-  } = props
+      wpgraphql: { post }
+    }
+  } = props;
 
-  const { title, content, date } = post
+  const { title, content, date } = post;
 
   return (
     <Layout>
       <Root>
         <h1>{title}</h1>
-        <p className="date">{format(parseISO(date), 'MMMM dd, yyyy')}</p>
+        <p className="date">{format(parseISO(date), "MMMM dd, yyyy")}</p>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </Root>
     </Layout>
-  )
-}
+  );
+};
 
-export default Post
+export default Post;
 
 export const postQuery = graphql`
   query GET_POST($id: ID!) {
@@ -56,4 +56,4 @@ export const postQuery = graphql`
       }
     }
   }
-`
+`;
