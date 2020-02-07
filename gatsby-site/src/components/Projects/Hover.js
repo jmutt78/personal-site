@@ -67,26 +67,15 @@ const CTA = styled.div({
 })
 
 const Hovers = ({ image, title, body, stack, url, git }) => {
-  const mediaMatch = window.matchMedia('(max-width: 500px)')
-  const [matches, setMatches] = useState(mediaMatch.matches)
-
-  useEffect(() => {
-    const handler = e => setMatches(e.matches)
-    mediaMatch.addListener(handler)
-    return () => mediaMatch.removeListener(handler)
-  })
-
-  const style = {
-    width: '300px',
-  }
-
   return (
     <div className="App" style={{ margin: `0 auto` }}>
       <Background
         css={css`
           background-image: url(${image});
+          @media (max-width: 500px) {
+            width: '300px';
+          }
         `}
-        style={matches ? style : null}
       >
         <DisplayOver>
           <Hover>

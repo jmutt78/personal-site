@@ -16,27 +16,9 @@ const Profile = () => {
     }
   `)
 
-  const mediaMatch = window.matchMedia('(max-width: 500px)')
-  const [matches, setMatches] = useState(mediaMatch.matches)
-
-  useEffect(() => {
-    const handler = e => setMatches(e.matches)
-    mediaMatch.addListener(handler)
-    return () => mediaMatch.removeListener(handler)
-  })
-
-  const responsive = {
-    width: '180px',
-    height: '180px',
-  }
-  const style = {
-    width: '300px',
-    height: '300px',
-  }
-
   return (
     <Img
-      style={matches ? responsive : style}
+      style={{ width: '300px', height: '300px' }}
       objectFit="cover"
       alt="Photo of Justin McIntosh a full stack developer"
       fluid={data.placeholderImage.childImageSharp.fluid}
