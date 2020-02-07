@@ -1,4 +1,4 @@
-const wordpressUrl = `http://entra.local/graphql`
+const wordpressUrl = `https://entra.flywheelsites.com/graphql`
 
 module.exports = {
   siteMetadata: {

@@ -7,7 +7,6 @@ export const Root = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: -130px;
-  border-bottom: 1px solid #1c0947;
 `
 
 export const StartupContainer = styled.div`

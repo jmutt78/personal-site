@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
             <button className="btn">LETS CHAT</button>
           </Button>
           <BlogLink>
-            <Link>
+            <Link to="/blog">
               <h3>BLOG</h3>
             </Link>
           </BlogLink>

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Root = styled.div`
   padding: 1rem 1.5rem 2rem;
+  border-top: 1px solid #1c0947;
 `
 
 export const Container = styled.div`

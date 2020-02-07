@@ -19,6 +19,10 @@ where: {
     uri
     postId
     title
+    featuredImage {
+      altText
+      sourceUrl
+    }
   }
 }
 }
@@ -27,6 +31,8 @@ where: {
 
   const { createPage } = actions
   const allPosts = []
+  const blogPages = []
+  let pageNumber = 0
 
   const fetchPages = async varables =>
     await graphql(GET_POSTS, varables).then(({ data }) => {
@@ -38,17 +44,39 @@ where: {
           },
         },
       } = data
+
+      const nodeIds = nodes.map(node => node.postId)
+      const postsTemplate = path.resolve(`./src/templates/posts.js`)
+      const postsPath = !varables.after ? `/blog/` : `/blog/page/${pageNumber}`
+
+      blogPages[pageNumber] = {
+        path: postsPath,
+        component: postsTemplate,
+        context: {
+          ids: nodeIds,
+          pageNumber,
+          hasNextPage,
+        },
+        ids: nodeIds,
+      }
+
       nodes.map(post => {
         allPosts.push(post)
       })
       if (hasNextPage) {
-        return fetchPages({ first: varables.first, after: endCursor })
+        pageNumber++
+        return fetchPages({ first: 12, after: endCursor })
       }
       return allPosts
     })
 
-  await fetchPages({ first: 100, after: null }).then(allPosts => {
+  await fetchPages({ first: 12, after: null }).then(allPosts => {
     const postTemplate = path.resolve(`./src/templates/post.js`)
+
+    blogPages.map(page => {
+      console.log(`create post list: ${page.path}`)
+      createPage(page)
+    })
 
     allPosts.map(post => {
       console.log(`create page: ${post.uri}`)

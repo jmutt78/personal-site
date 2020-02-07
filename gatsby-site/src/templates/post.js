@@ -1,19 +1,45 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
+import styled from 'styled-components'
+import { format, parseISO } from 'date-fns'
+import Layout from '../components/Layout'
+
+export const Root = styled.div`
+  padding: 1rem 4rem 2rem;
+  max-width: 1080px;
+  margin: 0 auto;
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .date {
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    padding: 1rem 2rem 2rem;
+  }
+`
 
 const Post = props => {
   const {
     data: {
-      wpgraphql: { post },
+      wpgraphql: { post, loading },
     },
   } = props
   console.log(props)
-  const { title, content } = post
+  const { title, content, date } = post
+
   return (
-    <div>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-    </div>
+    <Layout>
+      <Root>
+        <h1>{title}</h1>
+        <p className="date">{format(parseISO(date), 'MMMM dd, yyyy')}</p>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+      </Root>
+    </Layout>
   )
 }
 
@@ -26,6 +52,7 @@ export const postQuery = graphql`
         title
         content
         uri
+        date
       }
     }
   }
