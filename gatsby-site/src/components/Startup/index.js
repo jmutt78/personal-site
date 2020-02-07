@@ -36,7 +36,7 @@ const Startup = () => {
     <Root>
       <StartupContainer style={{ width: '80%', paddingTop: '30px' }}>
         {startups.map(({ image, title, body, url, simple }) => (
-          <StartupColumn>
+          <StartupColumn key={title}>
             {image}
 
             <p>{body}</p>

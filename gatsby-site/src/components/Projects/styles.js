@@ -51,58 +51,47 @@ export const SkillsColumn = styled.div`
     font-size: 0.9rem;
   }
   a {
-    color: white;
+    text-decoration: none;
   }
   svg {
     height: 30px;
     width: auto;
+    padding-left: 10px;
     position: absolute;
     filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(167deg)
       brightness(103%) contrast(107%);
   }
 `
-export const Button = styled.div`
+export const Button = styled.a`
   position: relative;
-  svg {
-    height: 30px;
-    width: auto;
-
-    bottom: 40%;
-    padding-left: 10px;
-    cursor: pointer;
-    filter: invert(44%) sepia(48%) saturate(1564%) hue-rotate(358deg)
-      brightness(102%) contrast(101%);
-  }
-  .btn {
-    width: 150px;
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  background: transparent;
+  border: 1.5px solid #f97304;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-size: 14px;
+  font-weight: 900;
+  color: #f97304;
+  text-align: center;
+  margin: 0px 0px 0px 5px;
+  padding: 5px;
+  @media (max-width: 500px) {
+    font-size: 10px;
+    width: 90px;
     height: auto;
-    border-radius: 12px;
-    cursor: pointer;
-    text-align: center;
-    background: transparent;
-    border: 1.5px solid #f97304;
-    outline: none;
-    transition: 1s ease-in-out;
-    font-size: 14px;
-    font-weight: 900;
-    color: #f97304;
-    text-align: center;
-    margin: 0px 0px 0px 5px;
-    padding: 5px;
-    @media (max-width: 500px) {
-      font-size: 10px;
-      width: 90px;
-      height: auto;
-    }
   }
 
-  .btn:hover {
+  :hover {
     transition: 0.5s ease-in-out;
     background: #f97304;
     color: #1c0947;
   }
 
-  .btn:hover svg {
+  :hover svg {
     stroke-dashoffset: -480;
   }
 `

@@ -46,7 +46,6 @@ const Work = () => {
       <Container>
         <Column>
           <h2>My Approach</h2>
-
           <h3>
             I help my clients make their ideas a reality. What to chat?{'  '}
             <ContactModal buttonLabel=" Contact Me">
@@ -57,7 +56,7 @@ const Work = () => {
       </Container>
       <SkillsContainer2 style={{ width: '80%', paddingTop: '30px' }}>
         {skillsData.map(({ image, title, body }) => (
-          <SkillsColumn>
+          <SkillsColumn key={title}>
             {image}
             <h4>{title}</h4>
             <p>{body}</p>

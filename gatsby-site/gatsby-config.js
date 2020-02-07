@@ -3,7 +3,7 @@ const wordpressUrl = `https://entra.flywheelsites.com/graphql`
 module.exports = {
   siteMetadata: {
     title: `Justin McIntosh`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Justin McIntosh is a freelance developer and entreprenur. Book now!`,
     author: `Justin McIntosh`,
   },
   plugins: [

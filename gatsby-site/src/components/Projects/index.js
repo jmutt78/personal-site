@@ -42,30 +42,11 @@ const Projects = () => {
     },
   ]
 
-  const myWorksection2 = [
-    {
-      image: journal,
-      title: 'Daily Journal',
-      body: `Side project that lets users record a simple journal.`,
-      url: 'https://my-journal-app123.herokuapp.com',
-      stack: 'React, Redux, MongoDB',
-      git: 'https://github.com/jmutt78/15-Minute-Journal',
-    },
-    {
-      image: hike,
-      title: 'Trail Finder API',
-      body: `Side project that lets users find trails near them.`,
-      url: 'https://jmutt78.github.io/Hiking-API-Hack/',
-      stack: 'HTML, CSS, JavaScript, jQuery',
-      git: 'https://github.com/jmutt78/15-Minute-Journal',
-    },
-  ]
-
   return (
     <Root>
       <SkillsContainer>
         {myWorksection1.map(({ image, title, body, stack, url, git }) => (
-          <SkillsColumn>
+          <SkillsColumn key={url}>
             <Hover
               image={image}
               title={title}
@@ -82,24 +63,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-// <Container>
-//   <Column>
-//     <h3>Recent Projects</h3>
-//   </Column>
-// </Container>
-
-// <SkillsContainer>
-//   {myWorksection2.map(({ image, title, body, stack, url, git }) => (
-//     <SkillsColumn>
-//       <Hover
-//         image={image}
-//         title={title}
-//         body={body}
-//         stack={stack}
-//         url={url}
-//         git={git}
-//       />
-//     </SkillsColumn>
-//   ))}
-// </SkillsContainer>

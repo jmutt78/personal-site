@@ -60,7 +60,7 @@ const Background = styled.div({
   },
 })
 
-const CTA = styled.a({
+const CTA = styled.div({
   position: 'absolute',
   bottom: '20px',
   left: '20px',
@@ -94,17 +94,16 @@ const Hovers = ({ image, title, body, stack, url, git }) => {
             <SubTitle>{body}</SubTitle>
             <Paragraph>Stack: {stack}</Paragraph>
             <CTA>
-              {' '}
-              <Button>
-                <a href={url} target="_blank">
-                  <button className="btn">VISIT WEBSITE+</button>
-                </a>
+              <div>
+                <Button href={url} target="_blank">
+                  VISIT WEBSITE+
+                </Button>
                 {git && (
                   <a href={git} target="_blank">
                     <GitHub />
                   </a>
                 )}
-              </Button>
+              </div>
             </CTA>
           </Hover>
         </DisplayOver>

@@ -28,7 +28,7 @@ const Logo = () => {
 
   return (
     <Img
-      style={{ width: '140px', height: 'auto' }}
+      style={{ width: '140px', height: 'auto', background: 'transparent' }}
       objectFit="cover"
       alt="Justin McIntosh Logo"
       fluid={data.placeholderImage.childImageSharp.fluid}

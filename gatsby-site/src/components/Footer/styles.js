@@ -28,6 +28,7 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 25px;
+  margin: 0;
 `
 
 export const SocialContainer = styled.div`

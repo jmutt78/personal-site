@@ -49,15 +49,17 @@ const Posts = props => {
       <Root>
         <h1>My Blog </h1>
         {posts.nodes.map(post => (
-          <Card
-            image={post.featuredImage.sourceUrl}
-            title={post.title}
-            date={format(parseISO(post.date), 'MMMM dd, yyyy')}
-            slug={post.slug}
-            uri={post.uri}
-            alt={post.featuredImage.altText}
-            excerpt={post.excerpt}
-          />
+          <div key={post.id}>
+            <Card
+              image={post.featuredImage.sourceUrl}
+              title={post.title}
+              date={format(parseISO(post.date), 'MMMM dd, yyyy')}
+              slug={post.slug}
+              uri={post.uri}
+              alt={post.featuredImage.altText}
+              excerpt={post.excerpt}
+            />
+          </div>
         ))}
         <Pagination pageNumber={pageNumber} hasNextPage={hasNextPage} />
       </Root>

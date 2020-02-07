@@ -47,7 +47,7 @@ const Footer = () => {
         <h2>Never Giving Up.</h2>
         <SocialContainer>
           {social.map(({ image, url, alt }) => (
-            <div>
+            <div key={url}>
               <a href={url} alt={alt}>
                 {image}
               </a>
