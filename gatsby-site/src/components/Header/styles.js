@@ -42,32 +42,30 @@ export const BlogLink = styled.div`
   }
 `
 
-export const Button = styled.div`
-  .btn {
-    width: 110px;
-    height: 60px;
-    cursor: pointer;
-    background: transparent;
-    border: 1.5px solid #1c0947;
-    outline: none;
-    transition: 1s ease-in-out;
-    font-size: 14px;
-    font-weight: 900;
-    color: #1c0947;
-    @media (max-width: 500px) {
-      font-size: 10px;
-      width: 90px;
-      height: 40px;
-    }
+export const Button = styled.button`
+  width: 110px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1.5px solid #1c0947;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-size: 14px;
+  font-weight: 900;
+  color: #1c0947;
+  @media (max-width: 500px) {
+    font-size: 10px;
+    width: 90px;
+    height: 40px;
   }
 
-  .btn:hover {
+  :hover {
     transition: 0.5s ease-in-out;
     background: #1c0947;
     color: white;
   }
 
-  .btn:hover svg {
+  :hover svg {
     stroke-dashoffset: -480;
   }
 `

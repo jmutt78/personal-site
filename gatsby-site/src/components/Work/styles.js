@@ -30,14 +30,11 @@ export const Column = styled.div`
     font-weight: 300;
     line-height: 1.5;
     font-size: 1.25rem !important;
-
+    display: inline-flex;
     margin-bottom: 1.5rem;
-  }
-  a {
-    color: #f97304;
-    cursor: pointer;
-    font-weight: 600;
-    text-decoration: none;
+    @media (max-width: 800px) {
+      display: block;
+    }
   }
 `
 
@@ -78,4 +75,12 @@ export const SkillsColumn = styled.div`
   @media (max-width: 800px) {
     padding: 0px 0px 15px 0px;
   }
+`
+
+export const Button = styled.a`
+  color: #f97304;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 10px;
 `

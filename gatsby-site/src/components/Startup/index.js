@@ -1,5 +1,8 @@
 import React from 'react'
 
+import ContactModal from './ContactModal'
+import Calendly from '../Calendly'
+
 import DocuSite from '../../../assets/docusite.svg'
 import Entra from '../../../assets/entra.svg'
 
@@ -47,11 +50,9 @@ const Startup = () => {
       <Container>
         <Column>
           <h2>Interested in working together? </h2>
-          <Button>
-            <a>
-              <button className="btn">LETS CHAT</button>
-            </a>
-          </Button>
+          <ContactModal buttonLabel=" LETS CHAT">
+            <Calendly />
+          </ContactModal>
         </Column>
       </Container>
     </Root>

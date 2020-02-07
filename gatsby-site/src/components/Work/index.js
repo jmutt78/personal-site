@@ -1,5 +1,8 @@
 import React from 'react'
 
+import ContactModal from './ContactModal'
+import Calendly from '../Calendly'
+
 import Idea from '../../../assets/idea.svg'
 import System from '../../../assets/innovation.svg'
 import Problem from '../../../assets/workflow.svg'
@@ -45,8 +48,10 @@ const Work = () => {
           <h2>My Approach</h2>
 
           <h3>
-            I help my clients make their ideas a reality. What to chat?{' '}
-            <a href="mailto:justinmcintosh7897@gmail.com">Contact me</a>
+            I help my clients make their ideas a reality. What to chat?{'  '}
+            <ContactModal buttonLabel=" Contact Me">
+              <Calendly />
+            </ContactModal>
           </h3>
         </Column>
       </Container>

@@ -76,38 +76,36 @@ export const Column = styled.div`
   }
 `
 
-export const Button = styled.div`
+export const Button = styled.button`
   position: relative;
 
-  .btn {
-    width: 200px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  background: transparent;
+  border: 1.5px solid #f97304;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-size: 18px;
+  font-weight: 900;
+  color: #f97304;
+  margin: 0px 0px 20px 5px;
+  padding: 5px;
+  @media (max-width: 500px) {
+    font-size: 10px;
+    width: 90px;
     height: auto;
-    border-radius: 20px;
-    cursor: pointer;
-    text-align: center;
-    background: transparent;
-    border: 1.5px solid #f97304;
-    outline: none;
-    transition: 1s ease-in-out;
-    font-size: 18px;
-    font-weight: 900;
-    color: #f97304;
-    margin: 0px 0px 20px 5px;
-    padding: 5px;
-    @media (max-width: 500px) {
-      font-size: 10px;
-      width: 90px;
-      height: auto;
-    }
   }
 
-  .btn:hover {
+  :hover {
     transition: 0.5s ease-in-out;
     background: #f97304;
     color: white;
   }
 
-  .btn:hover svg {
+  :hover svg {
     stroke-dashoffset: -480;
   }
 `
