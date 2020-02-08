@@ -1,10 +1,10 @@
-const wordpressUrl = `https://entra.flywheelsites.com/graphql`
+const wordpressUrl = `https://entra.flywheelsites.com/graphql`;
 
 module.exports = {
   siteMetadata: {
     title: `Justin McIntosh`,
     description: `Justin McIntosh is a freelance developer and entreprenur. Book now!`,
-    author: `Justin McIntosh`,
+    author: `Justin McIntosh`
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -16,23 +16,23 @@ module.exports = {
       options: {
         typeName: `WPGraphql`,
         fieldName: `wpgraphql`,
-        url: wordpressUrl,
-      },
+        url: wordpressUrl
+      }
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/,
-        },
-      },
+          include: /assets/
+        }
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -45,11 +45,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
+        icon: `src/images/JGM.png` // This path is relative to the root of the site.
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
-}
+  ]
+};
