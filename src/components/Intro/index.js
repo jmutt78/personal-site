@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import Profile from '../Images/Profile.js'
+import Profile from "../Images/Profile.js";
 
-import { Root, Container, Column, ImageContainer } from './styles'
+import { Root, Container, Column, ImageContainer } from "./styles";
 
 export default () => (
   <Root>
     <Container>
       <Column>
-        <h1>Full Stack Developer & Entreprenur</h1>
+        <h1>Web Developer & Entrepreneur</h1>
 
         <h2>
           I build beautiful functional websites and products for businesses
@@ -20,4 +20,4 @@ export default () => (
       </Column>
     </Container>
   </Root>
-)
+);

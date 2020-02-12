@@ -1,12 +1,12 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 
-import HeaderModal from './HeaderModal'
-import Logo from '../Images/Logo.js'
-import Calendly from '../Calendly'
+import HeaderModal from "./HeaderModal";
+import Logo from "../Images/Logo.js";
+import Calendly from "../Calendly";
 
-import { Root, NavFlex, NavLinks, BlogLink } from './styles'
+import { Root, NavFlex, NavLinks, BlogLink } from "./styles";
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -29,14 +29,14 @@ const Header = ({ siteTitle }) => (
       </NavFlex>
     </Root>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};
 
-export default Header
+export default Header;

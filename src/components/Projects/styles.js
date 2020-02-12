@@ -10,8 +10,13 @@ export const Root = styled.div`
     width: 100%;
   }
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
     text-align: center;
+  }
+
+  .title {
+    padding-top: 30px;
   }
 `;
 

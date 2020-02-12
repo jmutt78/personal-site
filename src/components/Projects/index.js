@@ -23,7 +23,10 @@ const Projects = () => {
       body: "Promotional website for a construction application.",
       url: "https://docusites.com",
       stack: "Wordpress"
-    },
+    }
+  ];
+
+  const myWorksection = [
     {
       image: journal,
       title: "Daily Journal",
@@ -44,9 +47,24 @@ const Projects = () => {
 
   return (
     <Root>
-      <h2>Recent Work</h2>
+      <h2>Business Websites</h2>
       <SkillsContainer>
         {myWorksection1.map(({ image, title, body, stack, url, git }) => (
+          <SkillsColumn key={url}>
+            <Hover
+              image={image}
+              title={title}
+              body={body}
+              stack={stack}
+              url={url}
+              git={git}
+            />
+          </SkillsColumn>
+        ))}
+      </SkillsContainer>
+      <h2 className="title">Web Applications</h2>
+      <SkillsContainer>
+        {myWorksection.map(({ image, title, body, stack, url, git }) => (
           <SkillsColumn key={url}>
             <Hover
               image={image}

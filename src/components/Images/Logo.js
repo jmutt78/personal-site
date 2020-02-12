@@ -1,6 +1,6 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -18,22 +18,22 @@ const Logo = () => {
     query {
       placeholderImage: file(relativePath: { eq: "JGM.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
       }
     }
-  `)
+  `);
 
   return (
     <Img
-      style={{ width: '140px', height: 'auto', background: 'transparent' }}
+      style={{ width: "140px", height: "auto", background: "transparent" }}
       objectFit="cover"
       alt="Justin McIntosh Logo"
       fluid={data.placeholderImage.childImageSharp.fluid}
     />
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;
