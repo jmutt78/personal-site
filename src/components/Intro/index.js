@@ -1,7 +1,7 @@
 import React from "react";
 
 import Profile from "../Images/Profile.js";
-// import Purple from "../../../assets/purple.svg";
+import Purple from "../../../assets/purple.svg";
 
 import {
   Root,
@@ -28,6 +28,6 @@ export default () => (
         </Column>
       </Container>
     </Root>
+    <Purple />
   </SVGContainer>
 );
-// <Purple />
