@@ -28,6 +28,6 @@ export default () => (
         </Column>
       </Container>
     </Root>
-    // <Purple />
   </SVGContainer>
 );
+// <Purple />
