@@ -18,7 +18,7 @@ const Profile = () => {
 
   return (
     <Img
-      style={{ width: "250px", height: "250px" }}
+      style={{ width: "150px", height: "150px" }}
       objectFit="cover"
       alt="Photo of Justin McIntosh a full stack developer"
       fluid={data.placeholderImage.childImageSharp.fluid}

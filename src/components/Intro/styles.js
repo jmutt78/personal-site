@@ -1,11 +1,23 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+
+export const SVGContainer = styled.div`
+overflow-x: hidden;
+svg {
+  display: flex;
+  height: auto;
+  width: 1300px;
+  margin-left auto;
+  margin-right: auto;
+
+}
+`;
 
 export const Root = styled.div`
   -webkit-box-flex: 1;
   flex-grow: 1;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
-`
+`;
 
 export const Container = styled.div`
   -webkit-box-flex: 1;
@@ -13,7 +25,7 @@ export const Container = styled.div`
   margin: 0 auto;
   position: relative;
   width: auto;
-`
+`;
 
 export const Column = styled.div`
   display: block;
@@ -27,7 +39,7 @@ export const Column = styled.div`
   }
 
   h2 {
-    font-family: 'europa', sans-serif;
+    font-family: "europa", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     font-size: 1.25rem !important;
@@ -44,7 +56,7 @@ export const Column = styled.div`
     }
 
     h2 {
-      font-family: 'europa', sans-serif;
+      font-family: "europa", sans-serif;
       font-weight: 300;
       line-height: 1.5;
       font-size: 1rem !important;
@@ -52,7 +64,7 @@ export const Column = styled.div`
       margin-bottom: 1.5rem;
     }
   }
-`
+`;
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -70,10 +82,10 @@ export const ImageContainer = styled.div`
       width: 50%;
       height: auto;
     }
-`
+`;
 export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 70px;
   margin-bottom: -80px;
-`
+`;

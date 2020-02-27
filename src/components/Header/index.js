@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import HeaderModal from "./HeaderModal";
-import Logo from "../Images/Logo.js";
+import Logo from "../../../assets/Logo.svg";
 import Calendly from "../Calendly";
 
 import { Root, NavFlex, NavLinks, BlogLink } from "./styles";
@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
     <Root>
       <NavFlex>
         <Link to="/">
-          <Logo />
+          <Logo style={{ height: "80px", width: "auto" }} />
         </Link>
         <NavLinks>
           <HeaderModal buttonLabel="LETS CHAT">
