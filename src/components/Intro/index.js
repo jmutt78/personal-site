@@ -1,7 +1,7 @@
 import React from "react";
 
 import Profile from "../Images/Profile.js";
-import Purple from "../../../assets/Purple.svg";
+import Purple from "../../../assets/purple.svg";
 
 import {
   Root,
