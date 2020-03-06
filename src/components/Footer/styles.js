@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Root = styled.div`
   padding: 1rem 1.5rem 2rem;
   border-top: 1px solid #1c0947;
-`
+`;
 
 export const Container = styled.div`
   display: block;
@@ -22,14 +22,14 @@ export const Container = styled.div`
     color: #1c0947;
     font-weight: 700;
   }
-`
+`;
 
 export const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  padding-top: 25px;
-  margin: 0;
-`
+  svg {
+    height: 80px;
+    width: auto;
+  }
+`;
 
 export const SocialContainer = styled.div`
   display: flex;
@@ -49,4 +49,4 @@ export const SocialContainer = styled.div`
       height: auto;
     }
   }
-`
+`;
