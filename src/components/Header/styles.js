@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Root = styled.div`
   width: 100%;
   backround: transparent;
   min-height: 100;
   display: flex;
-`
+`;
 
 export const NavFlex = styled.div`
   display: flex;
@@ -16,12 +16,16 @@ export const NavFlex = styled.div`
   height: 80px;
   padding: 60px 30px;
   max-width: 1920px;
-`
+  svg {
+    height: 80px;
+    width: auto;
+  }
+`;
 
 export const NavLinks = styled.div`
   padding: 12px 10px 8px 10px;
   display: flex;
-`
+`;
 export const BlogLink = styled.div`
   padding: 20px 0px 0px 25px;
   @media (max-width: 500px) {
@@ -40,7 +44,7 @@ export const BlogLink = styled.div`
   a {
     text-decoration: none;
   }
-`
+`;
 
 export const Button = styled.button`
   width: 110px;
@@ -68,4 +72,4 @@ export const Button = styled.button`
   :hover svg {
     stroke-dashoffset: -480;
   }
-`
+`;
